@@ -1,0 +1,67 @@
+generated: '2026-10-22'
+method: searched
+source:
+- https://zapier.com/apps/hostplus/integrations
+- https://n8n.io/integrations/hostplus/
+- https://composio.dev/toolkits/hostplus
+- https://monid.ai/tools/hostplus
+checked:
+- https://zapier.com/apps/hostplus/integrations (404)
+- https://www.make.com/en/integrations/hostplus (403, unreadable)
+- https://n8n.io/integrations/hostplus (404)
+- https://www.workato.com/integrations/hostplus (404)
+- https://hostplus.com.au/employers/how-to-make-payments/register-for-quicksuper (200, no named partners)
+- https://hostplus.com.au/employers/why-choose-hostplus/super-for-small-and-medium-businesses (200, no named partners)
+- https://composio.dev/toolkits/hostplus
+- https://monid.ai/tools/hostplus
+- https://n8n.io/integrations/hostplus/
+- https://zapier.com/apps/hostplus/integrations
+- https://data.gov.au/data/dataset/asic-afs-licensee
+- https://data.gov.au/data/dataset/asic-credit-licensee
+- https://www.apra.gov.au/register-of-authorised-deposit-taking-institutions
+- https://www.apra.gov.au/registers/list-registered-general-insurers
+summary: null
+marketplace_apps: []
+edges:
+- partner_name: ASIC Australian Financial Services licensees
+  partner: null
+  partner_match: register-name
+  type: register
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://data.gov.au/data/dataset/ab7eddce-84df-4098-bc8f-500d0d9776d1/resource/d98a113d-6b50-40e6-b65f-2612efc877f4/download/afs_lic_202610.csv
+  category: Australian financial services licence (ASIC)
+  contract_reference:
+    register: ASIC Australian Financial Services licensees
+    spec_file: null
+    standard: null
+    role: afs-licensee
+    registrations:
+    - registered_name: HOST-PLUS PTY. LIMITED
+      licences:
+      - AFS licence
+      - deposit and payment products
+      - superannuation
+      register_country: AU
+      matched_domain: null
+      matched_by: register-name
+      register_id: AFSL 244392
+      abn_acn: '79008634704'
+      state: VIC
+      start: 01/03/2004
+      register_name_note: 'register-name ''hostplus'' = hostplus; no wikidata P856; AU presence: Australia tag'
+    signal_note: 'participation only: a regulator licence / authorisation listing; no API conformance is published
+      by this register'
+    detected_by: sweep-australia-afs-adi-registers.py
+    detected: '2026-10-22'
+    matched_by: register-name
+    identity_source: register-name
+    identity_note: register gave only the name; exact normalised match to the repo's apis.yml name, one repo, Wikidata
+      P856 not contradicting (Kin 2026-10-20 decision 2)
+  detected_by: sweep-australia-afs-adi-registers.py
+  first_seen: '2026-10-22'
+templates: []
+note: No marketplace listing, partner/integrations page or API contract naming other services was found. QuickSuper
+  pages mention uploading a SAFF file "from compatible payroll software" without naming any payroll product, so
+  no partner edge is recorded.
