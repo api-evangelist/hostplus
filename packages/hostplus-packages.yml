@@ -1,0 +1,4 @@
+generated: '2026-10-22'
+method: none
+note: No first-party SDK or client library found. registry.npmjs.org/hostplus and pypi.org/pypi/hostplus/json both returned 404 on 2026-10-22; no developer portal or GitHub org is published.
+packages: []

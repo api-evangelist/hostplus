@@ -1,23 +1,94 @@
 aid: hostplus
+
 name: Hostplus
-description: 'Hostplus is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Hostplus is an Australian superannuation fund (self-described as "our leading Australian superannuation fund,
+  committed to putting our members first") offering superannuation, pensions, SMSF investment options and employer clearing-house
+  (QuickSuper) and adviser services. The website is provided by Host-Plus Pty Limited (ABN 79 008 634 704, AFSL 244392) as
+  trustee of the Hostplus Superannuation Fund and the Hostplus Pooled Superannuation Trust. No public developer portal or
+  API documentation was found on hostplus.com.au. First surfaced via the API Evangelist harvest backlog (australia-apidays-2026).
+
 url: https://raw.githubusercontent.com/api-evangelist/hostplus/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Superannuation
+- Financial Services
+- Retirement
+- Pensions
+- Investments
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://hostplus.com.au/content/dam/hostplus-program/site/logo/logo-small.png
+
 common:
+- type: Conformance
+  url: conformance/hostplus-conformance.yml
+- type: Hosts
+  url: hosts/hostplus-hosts.yml
+- type: Vendors
+  url: vendors/hostplus-vendors.yml
+- type: DomainSecurity
+  url: security/hostplus-domain-security.yml
 - type: Website
   url: https://hostplus.com.au/
+- type: Support
+  url: https://hostplus.com.au/about-us/contact-us
+- type: Newsroom
+  url: https://hostplus.com.au/about-us/news
+- type: Pricing
+  url: https://hostplus.com.au/smsfs/pricing-performance
+- type: PrivacyPolicy
+  url: https://hostplus.com.au/about-us/legals/privacy
+- type: Disclaimer
+  url: https://hostplus.com.au/about-us/legals/disclaimer
+- type: SignUp
+  url: https://hostplus.com.au/advisers/register
+- type: Login
+  url: https://www.clearinghouseapp.hostplus.com.au/login
+- type: Security
+  url: https://hostplus.com.au/about-us/hostplus-online-security
+- type: Careers
+  url: https://hostplus.com.au/about-us/careers
+- type: Facebook
+  url: https://www.facebook.com/HostplusSuper
+- type: YouTube
+  url: https://www.youtube.com/@hostplus
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website verified 200 at hostplus.com.au (title "Members | Manage your Superannuation with Hostplus"; footer names
+    Host-Plus Pty Limited). No developer portal, API docs or GitHub org found; /developers 404.
+  evidence:
+  - url: https://hostplus.com.au/
+    status: 200
+  - url: https://hostplus.com.au/developers
+    status: 404
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 12
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

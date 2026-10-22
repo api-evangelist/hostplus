@@ -1,0 +1,16 @@
+name: Hostplus MCP Server
+type: MCPServer
+generated: '2026-10-22'
+method: none
+status: none
+note: >-
+  No official Hostplus MCP server (remote or local) was found, and no candidate tool list could be
+  derived because Hostplus publishes no OpenAPI or other API contract. Checked 2026-10-22:
+  https://hostplus.com.au/.well-known/mcp.json (404), https://hostplus.com.au/.well-known/mcp/server-card.json (404),
+  pre-flight contract discovery on hostplus.com.au, www.clearinghouseapp.hostplus.com.au, mol.hostplus.com.au and
+  pensions.hostplus.com.au (mcp: absent), and a web search for a Hostplus API / MCP server (no results naming Hostplus).
+tools: []
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched

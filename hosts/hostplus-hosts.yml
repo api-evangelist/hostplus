@@ -1,0 +1,101 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 7
+  own: 4
+  other_domain: 1
+  platform: 2
+  roles:
+  - api
+  - identity
+  - other
+  - website
+hosts:
+- host: api.com.au
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: api.com.au
+  role: api
+  relation: other-domain
+- host: hostplus.com.au
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - Support
+  - Newsroom
+  - Pricing
+  - PrivacyPolicy
+  - Disclaimer
+  - SignUp
+  - Security
+  - Careers
+  serves:
+  - cdn
+  vendor: fastly
+  registrable_domain: hostplus.com.au
+  role: website
+  relation: own
+- host: mol.hostplus.com.au
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: hostplus.com.au
+  role: other
+  relation: own
+- host: pensions.hostplus.com.au
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: hostplus.com.au
+  role: other
+  relation: own
+- host: www.clearinghouseapp.hostplus.com.au
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Login
+  serves:
+  - cdn
+  vendor: akamai
+  registrable_domain: hostplus.com.au
+  role: identity
+  relation: own
+- host: www.facebook.com
+  found_by:
+  - pointer
+  types:
+  - Facebook
+  serves: []
+  registrable_domain: facebook.com
+  role: other
+  relation: platform
+- host: www.youtube.com
+  found_by:
+  - pointer
+  types:
+  - YouTube
+  serves: []
+  registrable_domain: youtube.com
+  role: other
+  relation: platform

@@ -1,0 +1,13 @@
+generated: '2026-10-22'
+method: searched
+source: https://hostplus.com.au/employers/how-to-make-payments/register-for-quicksuper
+note: Hostplus publishes no API contract; the only standard claim found is that its QuickSuper employer clearing house accepts the Australian SuperStream contribution file format. This is a file-upload claim on a product page, not a declared API contract surface.
+standards:
+- id: superstream-saff
+  name: SuperStream Alternative File Format (SAFF)
+  conforms: claimed
+  evidence: "QuickSuper accepts the standard SuperStream Alternative File Format (SAFF). (https://hostplus.com.au/employers/how-to-make-payments/register-for-quicksuper, fetched 2026-10-22, HTTP 200)"
+- id: superstream
+  name: SuperStream (ATO data and payment standard)
+  conforms: claimed
+  evidence: "Need a SuperStream compliant clearing house? Hostplus QuickSuper enables you to pay super to all your staff in one transaction (https://hostplus.com.au/employers/why-choose-hostplus/super-for-small-and-medium-businesses, fetched 2026-10-22, HTTP 200)"

@@ -1,0 +1,11 @@
+name: Hostplus pricing
+generated: '2026-10-22'
+method: none
+audience: consumer
+pricing_basis: none
+published: false
+plan_count: 0
+note: Hostplus publishes no API or developer pricing. Its pricing pages (e.g. https://hostplus.com.au/smsfs/pricing-performance) are superannuation/SMSF investment fee schedules for members, a consumer product, not API plans. The QuickSuper employer clearing house is a web/file-upload product, not an API.
+delivery:
+  model: managed
+plans: []

@@ -1,0 +1,57 @@
+generated: '2026-10-22'
+method: searched
+probe: true
+source: https://hostplus.com.au/about-us/legals/privacy
+jurisdiction: Australia (Privacy Act 1988 (Cth), Australian Privacy Principles)
+signals:
+  data_subject_request:
+    url: https://hostplus.com.au/about-us/legals/privacy
+    section: Access to and correction of your information
+    rights_named: [access, correction]
+    stated_sla: as soon as possible (no fixed period stated)
+    escalation: Office of the Australian Information Commissioner (oaic.gov.au) named as the source of privacy-rights information
+    evidence:
+    - source: https://hostplus.com.au/about-us/legals/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        You can request copies of your personal information using our contact details below. We’ll provide
+        you with a copy of your requested personal information or update your details as soon as possible.
+    - source: https://hostplus.com.au/about-us/legals/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        In the rare event that we’re unable to provide you with access to your personal information or update
+        your personal information, we’ll write to you to let you know why.
+    note: >-
+      Access and correction rights under the APPs, requested through the fund's published contact details,
+      with a written explanation if refused. No deletion or portability right and no fixed response period
+      is stated on the page.
+  data_residency:
+    url: https://hostplus.com.au/about-us/legals/privacy
+    section: Do we disclose your personal information to overseas recipients?
+    regions_named: [United States of America, United Kingdom, Singapore, Hong Kong, New Zealand, EU]
+    evidence:
+    - source: https://hostplus.com.au/about-us/legals/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        The countries where your information may be disclosed currently includes the United States of
+        America, the United Kingdom, Singapore, Hong Kong, New Zealand and EU.
+    - source: https://hostplus.com.au/about-us/legals/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        We will take reasonable steps to ensure any overseas recipient complies with the APPs and this may
+        include the use of contractual arrangements, due diligence assessments, and ongoing monitoring of
+        service provider obligations.
+    note: >-
+      Personal data is not committed to Australian residency: the policy names the overseas countries it
+      may be disclosed to and says safeguards are contractual. It says a full country list is available
+      on request; that list is not published on the page.
+pages_read:
+- url: https://hostplus.com.au/about-us/legals/privacy
+  http_status: 200
+- url: https://hostplus.com.au/about-us/hostplus-online-security
+  http_status: 200
+  note: Consumer scam and account-security guidance; no regulatory-posture clauses (no breach-notification, retention or disclosure-program language).
